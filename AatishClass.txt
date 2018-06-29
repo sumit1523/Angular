@@ -1,0 +1,53 @@
+1. Angular MVVM structure
+2. Nested structure
+
+** Angular use TypeScript(.ts)
+
+
+
+
+
+.ts to hodl component logic.
+    service is the file which holds common data of all the components
+
+
+Property binding --> []
+    <button [disable]=" " ></button>
+
+Event Binding --> ()
+    <button (clcick)= " " > Send </button>
+
+
+    @input --> Parent to child component
+    @output --> Child to parent component
+
+
+Directive
+    extends HTML tag 
+    ngfor -->To iterate and show
+    ngif --> to check a condition before show
+
+
+
+
+
+Two way binding
+    <input [(ngmodel)] = "variable" >
+
+Local Reference
+    
+
+Every component or service file should be imported to aap.module.ts. This is the module of the aplication.
+
+To create new component
+    ng g c comp_name
+   New Componet folder will be created inside app folder. it will be imported to app.module.ts automatically.
+
+To create service file in any specific folder(indside any component Folder)
+    ng g s path/drviceFile_name
+    Import it to aap.module.ts file. Paste the file name in "provide" then press ctr+. to import automatically.
+
+
+Routing
+----------
+    

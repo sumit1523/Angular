@@ -1,0 +1,7 @@
+<h5>
+  <br/>This is Department List<br/>
+</h5>
+
+<ul class="list-group" *ngFor="let department of departments">
+  <li class="list-group-item list-group-item-action" (click)='showDetails(department.id)'>{{department.id}}  {{department.name}}</li>
+</ul>
